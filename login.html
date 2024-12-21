@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en"> 
+
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+  <title>Animated Login Form</title> 
+  <style>
+    <?!= include('style.css'); ?>
+  </style>
+</head> 
+
+<body> 
+  <section> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> 
+
+<!-- Sign In Section -->
+<div class="signin" id="signin-section"> 
+  <div class="content"> 
+    <h2>Sign In</h2> 
+    <form id="loginForm" class="loginForm"> 
+      <div class="inputBox"> 
+        <input type="text" id="loginUsername" required> 
+        <i>Username</i> 
+      </div> 
+      <div class="inputBox"> 
+        <input type="password" id="loginPassword" required> 
+        <i>Password</i> 
+      </div> 
+      <div class="links"> 
+        Don't have an account? <a> </a><a href="#" id="signup-link">Signup</a> 
+      </div> 
+      <div class="inputBox"> 
+        <input type="submit" value="Login"> 
+      </div> 
+    </form> 
+  </div> 
+</div> 
+
+<!-- Signup Section -->
+<div class="signup" id="signup-section" style="display: none;">
+  <div class="content2">
+    <h2>Sign Up</h2>
+    <form id="signupForm" class="signupForm">
+      <div class="inputBox">
+        <input type="text" id="signupFullName" required>
+        <i>Full Name</i>
+      </div>
+      <div class="inputBox">
+        <input type="email" id="signupEmail" required>
+        <i>Email</i>
+      </div>
+      <div class="inputBox">
+        <input type="text" id="signupUsername" required>
+        <i>Username</i>
+      </div>
+      <div class="inputBox">
+        <input type="password" id="signupPassword" required>
+        <i>Password</i>
+      </div>
+      <div class="links">
+        Already have an account?<a></a><a href="#" id="signin-link">Back to Sign In</a>
+      </div>
+      <div class="inputBox">
+        <input type="submit" value="Register">
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Dashboard Section -->
+<div id="mainFormContainer" class="dashboard" style="display: none;">
+  <div class="content3">
+    <h1>Welcome to the Dashboard!</h1>
+    <p>You are successfully logged in.</p>
+    <button id="logoutButton" class="btn btn-danger" style="width: 200px; height: 40px; background-color: red;">Logout</button>
+  </div>
+</div>
+
+<script>
+  // Toggle between Sign In and Sign Up sections
+  document.getElementById("signup-link").addEventListener("click", function (e) {
+    e.preventDefault();
+    document.getElementById("signin-section").style.display = "none";
+    document.getElementById("signup-section").style.display = "block";
+  });
+
+  document.getElementById("signin-link").addEventListener("click", function (e) {
+    e.preventDefault();
+    document.getElementById("signup-section").style.display = "none";
+    document.getElementById("signin-section").style.display = "block";
+  });
+
+  // Login Form Handler
+  document.getElementById('loginForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    const username = document.getElementById('loginUsername').value;
+    const password = document.getElementById('loginPassword').value;
+
+    google.script.run.withSuccessHandler(loginResponse).processLogin(username, password);
+  });
+
+  function loginResponse(response) {
+    if (response.success) {
+      Swal.fire({
+        icon: 'success',
+        title: 'Login Successful!',
+        text: 'Welcome!',
+        timer: 1500,
+        showConfirmButton: false
+      }).then(() => {
+        document.getElementById('signin-section').style.display = 'none';
+        document.getElementById('mainFormContainer').style.display = 'block';
+      });
+    } else {
+      Swal.fire({
+        icon: 'error',
+        title: 'Login Failed',
+        text: response.message
+      });
+    }
+  }
+
+  // Signup Form Handler
+  document.getElementById('signupForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    const fullname = document.getElementById('signupFullName').value;
+    const email = document.getElementById('signupEmail').value;
+    const username = document.getElementById('signupUsername').value;
+    const password = document.getElementById('signupPassword').value;
+
+    google.script.run.withSuccessHandler(signupResponse).processSignup(fullname, email, username, password);
+  });
+
+  function signupResponse(response) {
+    if (response.success) {
+      Swal.fire({
+        icon: 'success',
+        title: 'Signup Successful!',
+        text: 'Please log in now.'
+      });
+      document.getElementById('signupForm').reset();
+      document.getElementById('signup-section').style.display = 'none';
+      document.getElementById('signin-section').style.display = 'block';
+    } else {
+      Swal.fire({
+        icon: 'error',
+        title: 'Signup Failed',
+        text: response.message
+      });
+    }
+  }
+
+  // Logout Handler
+  document.getElementById('logoutButton').addEventListener('click', function () {
+    Swal.fire({
+      icon: 'info',
+      title: 'Logging Out...',
+      timer: 1000,
+      showConfirmButton: false
+    }).then(() => {
+      document.getElementById('mainFormContainer').style.display = 'none';
+      document.getElementById('signin-section').style.display = 'block';
+      document.getElementById('loginForm').reset();
+    });
+  });
+</script>
+
+</body>
+
+</html>
